@@ -10,6 +10,18 @@ scene segmentation, thumbnail extraction, colour palette mapping, audio feature 
 
 ---
 
+## Requirements
+
+The environment requires Python ≥3.11 an environment.yml file is provided for Conda users. 
+
+Install with:
+```bash
+conda env create -f environment.yml
+conda activate tv-demo
+```
+
+---
+
 ## Repository Structure
 
 ```
@@ -131,17 +143,6 @@ This notebook runs the pipeline scripts sequentially, showing intermediate resul
 
 ---
 
-## Requirements
-
-The environment requires Python ≥3.11 an environment.yml file is provided for Conda users. 
-
-Install with:
-```bash
-conda env create -f environment.yml
-conda activate tv-demo
-```
-
----
 
 ## Reference
 
