@@ -1,4 +1,4 @@
-# Italian TV Commercials Dataset – Extraction Pipeline (Demo)
+# Italian TV Commercials Dataset – Methodology
 
 This repository provides a **demo pipeline** that illustrates the methodology used to create the  
 [Italian TV Commercials Dataset (1980–2024)](https://doi.org/10.5281/zenodo.17127245)  
