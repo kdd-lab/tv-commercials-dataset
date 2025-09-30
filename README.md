@@ -103,7 +103,7 @@ Run:
 
 ### 3. Audio Feature Extraction
 - Extracts **19 audio features** (spectral, chromatic, rhythmic, etc.) using `librosa` and `tempocnn`.
-- Saves results as `.npz` files grouped in ZIP archives under `audio/features/`.
+- Saves results as `.npz` files under `audio/features/<feature_name>_files/`.
 
 Run:
 ```bash
@@ -117,8 +117,9 @@ Run:
 - Transcribes speech to text and performs:
   - **Lemmatization**
   - **POS tagging**
-  - **TF–IDF weighting**
+  - **TF-IDF weighting**
 - Outputs:
+  - `audio/speech_class_confidence_score.csv`
   - `text/transcriptions.csv`
   - `text/lemmas.csv`
 
@@ -127,7 +128,9 @@ Run:
 %run '4_audio_transcription_and_lemmatization.py'
 ```
 
-For legal and copyright reasons, the column containing the raw speech transcriptions in text/transcriptions.csv must not be distributed or reused outside the project workflow. Only derived features (e.g., lemmas, frequency counts, TF–IDF values, or psycholinguistic annotations) should be retained and shared for analysis. The raw transcriptions should therefore be discarded after processing.
+#### Legal notes
+
+For legal and copyright reasons, the column containing the raw speech transcriptions in text/transcriptions.csv must not be distributed or reused outside the project workflow. Only derived features (e.g., lemmas, frequency counts, TF-IDF values, or psycholinguistic annotations) should be retained and shared for analysis. The raw transcriptions should therefore be discarded after processing.
 
 ---
 
