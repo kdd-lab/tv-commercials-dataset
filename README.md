@@ -26,19 +26,19 @@ conda activate tv-demo
 
 ```
 .
-├── demo_notebook.ipynb        # walkthrough of the entire pipeline
+├── demo_notebook.ipynb                          # walkthrough of the entire pipeline
 ├── 1_color_and_thumb_extraction.py
 ├── 2_ref_palette_idf_calculation.py
 ├── 3_audio_feature_extraction.py
 ├── 4_audio_transcription_and_lemmatization.py
 ├── initial_data/
-│   └── commercials_initial_metadata.csv # (user-provided)
-├── videos/                    # raw MP4 commercials (user-provided)
-├── general/                   # output: commercials.csv, scenes.csv, etc.
-├── colors/                    # output: reference palettes + IDFs
-├── audio/                     # output: features and speech confidence
-├── text/                      # output: lemmas and transcriptions
-└── thumbnails/                # output: scene thumbnails
+│   └── commercials_initial_metadata.csv         # (user-provided)
+├── videos/                                      # raw MP4 commercials (user-provided)
+├── general/                                     # output: commercials.csv, scenes.csv, etc.
+├── colors/                                      # output: reference palettes + IDFs
+├── audio/                                       # output: features and speech confidence
+├── text/                                        # output: lemmas and transcriptions
+└── thumbnails/                                  # output: scene thumbnails
 ```
 
 ---
