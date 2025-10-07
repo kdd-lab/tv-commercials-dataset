@@ -152,7 +152,7 @@ This notebook runs the pipeline scripts sequentially, showing intermediate resul
 If you use this methodology or the dataset, please cite:
 
 > Fadda D., Bellante G., Rinzivillo S., et al.  
-> *Four Decades of Italian TV Commercials: Visual, Audio, and Linguistic Feature Descriptors*  
+> *A dataset of four decades of Italian TV commercials: visual, audio, and linguistic feature descriptors*  
 > Zenodo (2025). DOI: [10.5281/zenodo.17127245](https://doi.org/10.5281/zenodo.17127245)
 
 ---
