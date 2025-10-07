@@ -157,27 +157,26 @@ If you use this methodology or the dataset, please cite:
 
 ---
 
-\section*{License}
+## License
 
-The code and demo pipeline are released under the \textbf{Apache License, Version 2.0}. 
+The code and demo pipeline are released under the **Apache License, Version 2.0**.  
 You may obtain a copy of the License at:
-\begin{quote}
-\url{http://www.apache.org/licenses/LICENSE-2.0}
-\end{quote}
 
-Unless required by applicable law or agreed to in writing, the software is distributed on an 
-\textit{``AS IS'' basis}, without warranties or conditions of any kind, either express or implied. 
-See the accompanying \texttt{LICENSE} file for detailed terms and conditions.
+> [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-The dataset itself is distributed separately under its own license, 
+Unless required by applicable law or agreed to in writing, the software is distributed on an  
+*“AS IS” basis*, without warranties or conditions of any kind, either express or implied.  
+See the accompanying `LICENSE` file for detailed terms and conditions.
+
+The dataset itself is distributed separately under its own license,  
 as indicated in the Zenodo record:
-\begin{quote}
-\url{https://doi.org/10.5281/zenodo.17127245}
-\end{quote}
 
-\paragraph{Acknowledgment.}
-This work was carried out within the \textbf{SoBigData.it} project, 
-\textit{``Strengthening the Italian RI for Social Mining and Big Data Analytics''} 
-(Prot.~IR0000013 – Avviso n.~3264 del 28/12/2021), 
-funded by the \textbf{European Union – NextGenerationEU} 
-under the \textbf{National Recovery and Resilience Plan (PNRR)}.
+> [https://doi.org/10.5281/zenodo.17127245](https://doi.org/10.5281/zenodo.17127245)
+
+### Acknowledgment
+
+This work was carried out within the **SoBigData.it** project  
+*“Strengthening the Italian RI for Social Mining and Big Data Analytics”*  
+(Prot. IR0000013 – Avviso n. 3264 del 28/12/2021),  
+funded by the **European Union – NextGenerationEU**  
+under the **National Recovery and Resilience Plan (PNRR)**.
