@@ -157,7 +157,27 @@ If you use this methodology or the dataset, please cite:
 
 ---
 
-## License
+\section*{License}
 
-The code and demo pipeline are released under the **MIT License**.  
-The dataset itself is released separately under its own license (see the Zenodo record).
+The code and demo pipeline are released under the \textbf{Apache License, Version 2.0}. 
+You may obtain a copy of the License at:
+\begin{quote}
+\url{http://www.apache.org/licenses/LICENSE-2.0}
+\end{quote}
+
+Unless required by applicable law or agreed to in writing, the software is distributed on an 
+\textit{``AS IS'' basis}, without warranties or conditions of any kind, either express or implied. 
+See the accompanying \texttt{LICENSE} file for detailed terms and conditions.
+
+The dataset itself is distributed separately under its own license, 
+as indicated in the Zenodo record:
+\begin{quote}
+\url{https://doi.org/10.5281/zenodo.17127245}
+\end{quote}
+
+\paragraph{Acknowledgment.}
+This work was carried out within the \textbf{SoBigData.it} project, 
+\textit{``Strengthening the Italian RI for Social Mining and Big Data Analytics''} 
+(Prot.~IR0000013 – Avviso n.~3264 del 28/12/2021), 
+funded by the \textbf{European Union – NextGenerationEU} 
+under the \textbf{National Recovery and Resilience Plan (PNRR)}.
