@@ -33,7 +33,7 @@ conda activate tv-demo
 ├── 4_audio_transcription_and_lemmatization.py
 ├── initial_data/
 │   └── commercials_initial_metadata.csv # (user-provided)
-├── videos/                    # (user-provided) raw MP4 commercials
+├── videos/                    # raw MP4 commercials (user-provided)
 ├── general/                   # output: commercials.csv, scenes.csv, etc.
 ├── colors/                    # output: reference palettes + IDFs
 ├── audio/                     # output: features and speech confidence
