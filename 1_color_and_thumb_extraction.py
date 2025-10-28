@@ -255,7 +255,7 @@ print('➡️ Create a new dataset just for the scenes of each video with their\
 print('*#' * 24)
 
 commercials_df: pd.DataFrame = pd.read_csv(
-    'general/commercials.csv', usecols=['commercial_id', 'avg_frame_rate'],
+    'general/commercials.csv',
 )
 pal_df_list: list[pd.DataFrame] = []
 for index, row in commercials_df.iterrows():
@@ -268,9 +268,14 @@ for index, row in commercials_df.iterrows():
         index_col=False, usecols=['commercial_id', 'scene', 'scene_size', 'start_frame', 'end_frame'],
     )
     pal_df.drop_duplicates(subset=['commercial_id', 'scene', 'scene_size'], inplace=True)
-    pal_df['scene_size_norm'] = pal_df['scene_size'] / pal_df['scene_size'].sum()
+    pal_df['scene_size_norm'] = round(pal_df['scene_size'] / pal_df['scene_size'].sum(), 2)
     pal_df['scene_duration_in_seconds'] = pal_df['scene_size'] / avg_frame_rate
     pal_df_list.append(pal_df)
+    # Add the duration of each commercial (after removing `black` scenes) to commercials.csv (`duration_in_seconds`)
+    commercials_df.loc[index, 'duration_in_seconds'] = round(pal_df['scene_duration_in_seconds'].sum(), 2)
+    commercials_df.to_csv(f'general/commercials.csv', index=False)
+    print('-' * 48)
+    print(f'📄 Updated `general/commercials.csv`')
 commercials_with_scenes_info_df = pd.concat(pal_df_list)
 
 commercials_with_scenes_info_df.to_csv(
