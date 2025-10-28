@@ -1,0 +1,15 @@
+cff-version: 1.0.0
+title: "Italian TV Commercials Dataset (1980–2024)"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+authors:
+  - family-names: Fadda
+    given-names: Daniele
+  - family-names: Bellante
+    given-names: Giorgio
+  - family-names: Rinzivillo
+    given-names: Salvatore
+publisher: Zenodo
+year: 2025
+doi: 10.5281/zenodo.17127245
+url: "https://doi.org/10.5281/zenodo.17127245"

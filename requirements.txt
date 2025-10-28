@@ -1,0 +1,47 @@
+# requirements.txt for tv-demo (venv / pip)
+python_version == "3.11.*"
+
+# Core Python scientific stack
+numpy==1.26.*
+scipy==1.11.*
+pandas==2.2.*
+matplotlib==3.10.*
+scikit-learn>=1.3,<1.6
+
+# Computer vision
+opencv-python==4.10.*
+
+# Audio / video + signal processing
+av~=14.1.0
+ffmpeg-python~=0.2.0
+pydub~=0.25.1
+librosa~=0.10.2.post1
+soxr  # optional if not installed system-wide
+
+# NLP and text processing
+nltk~=3.9.1
+stanza~=1.10.1
+regex~=2024.11.6
+
+# Deep learning stack
+tensorflow==2.17.0
+tf-keras~=2.17.0
+tensorflow-hub~=0.16.1
+tempocnn==0.0.8
+faster-whisper~=1.1.1
+
+# Colour analysis
+coloraide~=4.2.1
+pylette~=4.0.1
+webcolors~=24.11.1
+
+# Scene detection
+scenedetect==0.6.5.2
+
+# Data viz and notebook support
+altair~=5.5.0
+plotly~=6.0.0
+vl-convert-python~=1.8.0
+kaleido~=0.2.1
+ipython~=8.32.0
+pillow~=10.4.0
