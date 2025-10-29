@@ -40,16 +40,17 @@ for index, row in commercials_df.iterrows():
     print(f'📼 Video {(index + 1)}/{len(commercials_df)}:', commercial_id)
 
     video_info: dict = ffmpeg.probe(video_path)
-    try:
+    # Find the `video` stream
+    for stream in video_info['streams']:
+        if stream['codec_type'] != 'video':
+            continue
         # `avg_frame_rate` is a fraction e.g. `25/1`
-        avg_frame_rate: float = round(eval(video_info['streams'][0]['avg_frame_rate']), 2)
-        # `display_aspect_ratio` is a ratio e.g. `16:9`
-        aspect_ratio: float = round(eval(video_info['streams'][0]['display_aspect_ratio'].replace(':', '/')), 2)
-    except:
-        # `avg_frame_rate` is a fraction e.g. `25/1`
-        avg_frame_rate: float = round(eval(video_info['streams'][1]['avg_frame_rate']), 2)
-        # `display_aspect_ratio` is a ratio e.g. `16:9`
-        aspect_ratio: float = round(eval(video_info['streams'][1]['display_aspect_ratio'].replace(':', '/')), 2)
+        avg_frame_rate: float = round(eval(stream['avg_frame_rate']), 2)
+        try:
+            # `display_aspect_ratio` is a ratio e.g. `16:9`
+            aspect_ratio: float = round(eval(stream['display_aspect_ratio'].replace(':', '/')), 2)
+        except:
+            aspect_ratio: float = round(stream['width'] / stream['height'], 2)
 
     # Enrich commercials_df
     commercials_df.loc[index, 'avg_frame_rate'] = avg_frame_rate
