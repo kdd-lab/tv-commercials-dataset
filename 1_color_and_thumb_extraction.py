@@ -255,7 +255,7 @@ print('➡️ Create a new dataset just for the scenes of each video with their\
 print('*#' * 24)
 
 commercials_df: pd.DataFrame = pd.read_csv(
-    'general/commercials.csv',
+    'general/commercials.csv'
 )
 pal_df_list: list[pd.DataFrame] = []
 for index, row in commercials_df.iterrows():
@@ -283,7 +283,7 @@ commercials_with_scenes_info_df.to_csv(
     index=False,
 )
 print('-' * 48)
-print(f'📄 `general/scenes.csv` has been updated')
+print(f'📄 Updated `general/scenes.csv`')
 
 ######################
 print()
