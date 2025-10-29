@@ -275,11 +275,13 @@ for index, row in commercials_df.iterrows():
     commercials_df.loc[index, 'duration_in_seconds'] = round(pal_df['scene_duration_in_seconds'].sum(), 2)
     # Add the total frames of each commercial (after removing `black` scenes) to commercials.csv (`tot_frames`)
     commercials_df.loc[index, 'tot_frames'] = pal_df['scene_size'].sum()
-    # Cast the entire `tot_frames` column to the integer type
-    commercials_df['tot_frames'] = commercials_df['tot_frames'].astype('Int64')
-    commercials_df.to_csv(f'general/commercials.csv', index=False)
-    print('-' * 48)
-    print(f'📄 Updated `general/commercials.csv`')
+
+# Cast the entire `tot_frames` column to the integer type
+commercials_df['tot_frames'] = commercials_df['tot_frames'].astype('Int64')
+commercials_df.to_csv(f'general/commercials.csv', index=False)
+print('-' * 48)
+print(f'📄 Updated `general/commercials.csv`')
+
 commercials_with_scenes_info_df = pd.concat(pal_df_list)
 
 commercials_with_scenes_info_df.to_csv(
