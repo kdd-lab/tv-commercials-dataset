@@ -268,7 +268,7 @@ for index, row in commercials_df.iterrows():
     )
     pal_df.drop_duplicates(subset=['commercial_id', 'scene', 'scene_size'], inplace=True)
     pal_df['scene_size_norm'] = pal_df['scene_size'] / pal_df['scene_size'].sum()
-    pal_df['scene_duration_in_seconds'] = pal_df['scene_size'] / avg_frame_rate
+    pal_df['scene_duration_in_seconds'] = round(pal_df['scene_size'] / avg_frame_rate, 2)
     pal_df_list.append(pal_df)
     # Add the duration of each commercial (after removing `black` scenes) to commercials.csv (`duration_in_seconds`)
     commercials_df.loc[index, 'duration_in_seconds'] = round(pal_df['scene_duration_in_seconds'].sum(), 2)
