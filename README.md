@@ -134,7 +134,7 @@ For legal and copyright reasons, the column containing the raw speech transcript
 
 ---
 
-## Notebook
+## Notebooks
 
 To see and execute the entire workflow step by step, open:
 
@@ -143,6 +143,14 @@ script_pipeline.ipynb
 ```
 
 This notebook runs the pipeline scripts sequentially, showing intermediate results (metadata tables, colour palettes, spectrograms, sample transcriptions).
+
+---
+
+
+```
+dataviz_colors.ipynb
+```  
+This notebook allows the analysis of the chromatic distribution of each selected commercial, generating a **Sunburst chart** to explore the hierarchy of palettes (Basic, Essential, Extended) and a **Marimekko diagram** that visualizes the percentage composition of dominant colors within the same spot.
 
 ---
 
