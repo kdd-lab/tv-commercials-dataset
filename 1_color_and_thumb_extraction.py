@@ -255,9 +255,7 @@ print('➡️ Create a new dataset just for the scenes of each video with their\
       '➡️ scene sizes, start frames, end frames, scene sizes normalized and scene duration in seconds')
 print('*#' * 24)
 
-commercials_df: pd.DataFrame = pd.read_csv(
-    'general/commercials.csv'
-)
+commercials_df: pd.DataFrame = pd.read_csv('general/commercials.csv')
 pal_df_list: list[pd.DataFrame] = []
 for index, row in commercials_df.iterrows():
     commercial_id: str = row['commercial_id']
